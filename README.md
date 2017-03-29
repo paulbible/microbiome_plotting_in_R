@@ -8,7 +8,7 @@ Some notes on plotting microbiome data.
 
 ## Alpha diversity by sample
 
-![a-div-bargraph](/plots/alpha_diversity_species_boxplot.png)
+![a-div-bargraph](/plots/alpha_diversity_by_sample_bar_graph.png)
 
 ## Principle Coordinate Analysis
 
