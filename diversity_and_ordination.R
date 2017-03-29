@@ -4,7 +4,7 @@ library(ggplot2)
 library(reshape2)
 
 ########################
-setwd("C:\\Users\\WLab\\Desktop\\work\\A_projects\\a_wei_lab_microbiome\\a_projects\\microbiom_R_plotting")
+# Move R to the data directory
 #setwd("path/to/data")
 
 # load test data
@@ -18,8 +18,8 @@ tmp.matrix <- species.table[-1,]
 # Convert data to numberic types
 species.counts <- apply(as.matrix.noquote(tmp.matrix),2,as.numeric)
 # reset the correct column and row names
-rownames(species.counts) <- rownames(species.table)
-colnames(species.counts) <- colnames(species.table)
+rownames(species.counts) <- rownames(tmp.matrix)
+colnames(species.counts) <- colnames(tmp.matrix)
 
 # optional filtering
 species.filtered <- as.matrix(species.counts)
