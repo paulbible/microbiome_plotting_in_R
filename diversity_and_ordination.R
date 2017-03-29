@@ -4,7 +4,6 @@ library(ggplot2)
 library(reshape2)
 
 ########################
-# Move R to the data directory
 #setwd("path/to/data")
 
 # load test data
@@ -22,7 +21,7 @@ rownames(species.counts) <- rownames(tmp.matrix)
 colnames(species.counts) <- colnames(tmp.matrix)
 
 # optional filtering
-species.filtered <- as.matrix(species.counts)
+species.filtered <- species.counts
 species.filtered[species.filtered < 2000 ] <- 0
 # remove zero rows
 rsums <- rowSums(species.filtered)
@@ -125,7 +124,7 @@ ggplot(data=df,
        aes(x=PCoA1,
            y=PCoA2,
            color=group)) + 
-  geom_point() +
+  geom_point(size=2) +
   labs(list(title = "PCoA of Relative abundance (Bray-Curtis Distance)",
             x = "PCo1",
             y = "PCo2")) +
