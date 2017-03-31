@@ -22,4 +22,6 @@ Some notes on plotting microbiome data.
 
 ![a-div-boxplot](/plots/alpha_diversity_species_boxplot.png)
 
+## Random Forest Variable Importance
+![random-forest](alpha_diversity_by_sample_bar_graph.png)
 
