@@ -1,6 +1,11 @@
 # Microbiome Plotting in R
+Some notes on plotting microbiome data. This repository is intended to help other in making nice looking microbiome figures and perform some simple analysis.
 
-Some notes on plotting microbiome data.
+## Brief note on how data was simulated
+
+These data were simulated from a mouse gut microbiome study. The distribution of abundance values for each species was modeled and then sampled randomly with noise added. The data were then clustered using k-means with k = 4. The data points were then adjusted to be 80% closer to their k-means centers. This adjustment made the ordination look better. This dataset should be "like" a real dataset but any results/conclusions are not meaningful.
+
+The genus data were constructed in a similar manner and are not related to the species data.
 
 ## Genus abundance bar graph
 
